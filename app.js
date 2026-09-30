@@ -1,4 +1,4 @@
-const bells = new Audio("./sounds/bell.wav");
+
 const startBtn = document.querySelector(".btn-start");
 const session = document.querySelector(".minutes");
 let myInterval;
@@ -28,7 +28,7 @@ const appTimer = () => {
       minuteDiv.textContent = `${minutesLeft}`;
 
       if (minutesLeft === 0 && secondsLeft === 0) {
-        bells.play();
+        
         clearInterval(myInterval);
       }
     };
